@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   
+  <title>客服中心</title> 
+  <meta name="twitter:card" content="summary">
+  <link rel="alternative"   title="客服中心" type="application/atom+xml"> 
+  <style type="text/css">
+    #container.show {
+      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+    }
+  </style>
+  
+  <script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+        s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 233573);
+
+    // 增加定时器自动执行代码
+    var int=self.setTimeout("clock()",1000);
+    function clock()
+    {
+      if(document.all) {
+        var x = document.getElementById("meiqia-container")
+        console.log(x)
+        x.click();
+         
+        var button = window.frames["button"].document.getElementsByClassName("router-button__Wrapper-sc-1xlmfkg-0");
+        
+        console.log(button)
+      }else {
+
+        var e = document.createEvent("MouseEvents");
+
+        e.initEvent("click", true, true);
+        var x = document.getElementById("meiqia-container");
+        console.log(x)
+        x.dispatchEvent(e);
+        
+        var button = window.frames["button"].document.getElementsByClassName("router-button__Wrapper-sc-1xlmfkg-0");
+        button[0].click()
+        console.log(button) 
+
+      }
+    }
+    
+    
+</script> 
+<meta name="generator" content="Hexo 4.2.1"></head> 
+<body> 
+</body>
+</html>
