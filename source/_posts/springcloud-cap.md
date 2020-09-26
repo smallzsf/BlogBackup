@@ -3,8 +3,8 @@ title: springcloud-cap
 date: 2020-09-25 06:41:18
 tags:
 - javaweb
-- javaweb-微服务
-- javaweb-cap
+- 微服务
+- cap
 ---
 
 ### 分布式中的CAP原理
