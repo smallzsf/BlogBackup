@@ -44,4 +44,4 @@ tags:
     }
 ```
 
-另外，在查找大文件的扫描结果中，可能有通过-v进行了挂载数据目录的，里面的数据可根据相应的挂载目录找到对应的容器进行清理或设置；也可能有出现许多容器产生的未通过-v挂载的目录/var/lib/docker/overlay2/{id}/merged，即文章开头通过df -h找到的文件（如果一个宿主机存在多个容器，多个容器的数据都位于宿主机的overlay（Filesystem）,而且大小一致），可通过docker inspect {container}中GraphDriver找到}/var/lib/docker/overlay2/{id}中的{id}，进而确定容器进行清理或设置大小
+另外，在查找大文件的扫描结果中，可能有通过-v进行了挂载数据目录的，里面的数据可根据相应的挂载目录找到对应的容器进行清理或设置；也可能有出现许多容器产生的未通过-v挂载的目录/var/lib/docker/overlay2/{id}/merged，即文章开头通过df -h找到的文件（如果一个宿主机存在多个容器，多个容器的数据都位于宿主机的overlay（Filesystem）,而且大小一致），可通过docker inspect {container}中GraphDriver找到}/var/lib/docker/overlay2/{id}中的{id}，进而确定容器进行清理或设置
